@@ -16,7 +16,7 @@ body {
    display: flex;
    flex-direction: column;
    height: 100%;
-   font-family: sans-serif;
+   font-family: "Babas Neue", "Roboto Condensed", "Arial", sans-serif;
    font-size: 16px;
    line-height: 1.5;
 }
@@ -34,5 +34,219 @@ img {
 
 /* MAIN CONTENT */
 .main__content {
+   display: flex;
+   flex-direction: column;
    flex-grow: 1;
+}
+
+.main__wrapper {
+   display: flex;
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+   flex-grow: 1;
+}
+
+
+/* Main left */
+
+.main__left {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 600px;
+   width: 100%;
+   margin: 0 0 24px 0;
+   background-image: url("../img/Rectangle\ 1.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center bottom;
+   margin: 0;
+}
+
+.main__left-content {
+   max-width: 285px;
+   width: 100%;
+}
+
+.main__left-title {
+   color: #FFF;
+   font-family: "Bebas Neue";
+   font-size: 24px;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: 2px;
+}
+
+.main__left-link {
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   text-transform: uppercase;
+   padding: 12px 24px;
+   background-color: #1E90FF;
+   font-family: "Bebas Neue";
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 2px;
+   transition: background-color 0.4s ease;
+}
+
+.main__left-link:hover {
+   background-color: rgba(30, 144, 255, 0.80);
+}
+
+.main__left-link:active {
+   background-color: rgba(30, 144, 255, 0.60);
+}
+
+.main__left-span {
+   display: flex;
+}
+
+.main__left-span::before {
+   width: 20px;
+   height: 20px;
+   content: '';
+   background-image: url("../img/Vector.svg");
+   color: #fff;
+   background-repeat: no-repeat;
+   margin-right: 12px;
+}
+
+/* Main right */
+
+.main__right {
+   padding: 54px;
+   width: 100%;
+   max-width: 600px;
+}
+
+.main__right-title {
+   color: #222;
+   font-family: "Bebas Neue";
+   font-size: 24px;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: 2px;
+   margin: 0 0 24px 0;
+}
+
+.main__right-line {
+   border: 0;
+   height: 1px;
+   color: #999;
+}
+
+.main__right-card {
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.main__right-card:last-child {
+   margin-bottom: 25px;
+}
+
+.main__card-img {
+   display: block;
+   width: 160px;
+   height: 100px;
+}
+
+.main__card-info {
+   padding: 16px;
+}
+
+.main__card-title {
+   display: inline-block;
+   text-decoration: none;
+   margin: 0;
+   max-width: 307px;
+   width: 100%;
+   color: #222;
+   font-family: "Bebas Neue";
+   font-size: 18px;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: 2px;
+   transition: color 0.4s ease;
+}
+
+.main__card-title:hover {
+   color: #1E90FF;
+}
+
+.main__card-title:active {
+   color: rgba(30, 144, 255, 0.60);
+}
+
+.main__info-detail {
+   display: flex;
+   column-gap: 24px;
+}
+
+.main__detail-time {
+   color: #888;
+   font-family: "Roboto Condensed";
+   font-size: 14px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.main__time-span {
+   display: flex;
+}
+
+.main__time-span::before {
+   content: '';
+   margin-right: 4px;
+   width: 16px;
+   height: 16px;
+   background-image: url("../img/icon-clock\ 1.svg");
+}
+
+.main__detail-view {
+   color: #888;
+   font-family: "Roboto Condensed";
+   font-size: 14px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.main__view-span {
+   display: flex;
+}
+
+.main__view-span::before {
+   content: '';
+   width: 16px;
+   height: 16px;
+   margin-right: 4px;
+   background-image: url('../img/visibility_black.svg');
+}
+
+.main__right-link {
+   display: inline-block;
+   max-width: 492px;
+   width: 100%;
+   border-radius: 4px;
+   background-color: #1E90FF;
+   color: #FFF;
+   font-family: "Roboto Condensed";
+   font-size: 14px;
+   font-weight: 700;
+   line-height: normal;
+   text-align: center;
+   padding: 12px 0;
+   text-decoration: none;
+   transition: background-color 0.4s ease;
+}
+
+.main__right-link:hover {
+   background-color: rgba(30, 144, 255, 0.80);
+}
+
+.main__right-link:active {
+   background-color: rgba(30, 144, 255, 0.60);
 }
